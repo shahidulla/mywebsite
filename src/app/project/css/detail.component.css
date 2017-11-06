@@ -1,0 +1,23 @@
+img {
+    height: 80%;
+    width: 100%;
+}
+
+.container {
+    margin-bottom: 30px;
+    /*height:75%;*/
+    width: 90%;
+    background-color: white;
+}
+
+hr{
+     border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+  .border {
+     border: 1px solid cornflowerblue;
+      padding: 10px;  
+  }

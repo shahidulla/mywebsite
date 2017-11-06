@@ -1,0 +1,51 @@
+[
+  {
+    "id":1,
+     "name":"DaVinci (In development phase):",
+     "description":"It is a full enterprise point of sale (POS) solution which will have more than 30 products for example Check Cashing, Prepaid VISA card, Gift card, Western Union Point of Sale, different kind of loan products, Money order and so on. It has two part one is Admin portal, and another one is Point of sale (POS). This is the rewriting of old POS system with latest technologies and features.",
+     "environment": "C#, ASP.NET Core Web API, ASP. NET Web API,  ASP.NET Core MVC, ASP.NET MVC, Angular, SQL, Dapper, Visual Studio 2017, HTML, CSS and Visual Studio Code."
+  },
+  {
+    "id":2,
+     "name":"A Blog Website and Blog Engine:",
+     "description":"In this Blog Website visitor can see the author profile, contact with an author,  and the blog posts. Visitors also will be able to comments on a post, search post, share the post. In Blog Engine, Admin can manage a post. He/ She can add, delete and update the post.",
+     "environment": "C#, ASP.NET Web API, ASP.NET MVC, Entity Framework, Angular, SQL, HTML, and CSS."
+  },
+  {
+    "id":3,
+     "name":"WUPOS (Westernunion Point of Sale):",
+     "description":"User can send money anywhere in the world,  can receive money, can pay their bill to utility company like At&T, ComEd, Comcast and so on. An agent can issue a new prepaid card to a user, cancel send money and so on. The user can reload prepaid card. The agent can order necessary things, like send money and receive money forms, printing papers, banner, brochure and so on.",
+     "environment": " C#, ASP.NET Web API, ASP.NET MVC, JavaScript, jQuery, SQL, Entity Framework, Visual Studio 2015, HTML and CSS."
+  },
+  {
+    "id":4,
+     "name":"IT Workshop Management System:",
+     "description":"In this project, Admin can announce a workshop on a topic and assign to the trainer. A student can register and send a request to attend. Admin can approve/deny the request send by the student and send a confirmation email along with login credentials. Using the login credentials, they will be able to access the material on workshop on the portal.",
+     "environment": "C#,  ASP.NET MVC, SQL Server 2012, ADO.NET, HTML, CSS, JavaScript and jQuery."
+  },
+  {
+    "id":5,
+     "name":"Carpe Diem:",
+     "description":"In this project, the user can create his/her profile on Android phone. After creating the profile, the application will enable the user to input his/her future goals. Based on profile and goal the user will be greeted by daily motivational quotes (stored in the system). The application also allows the user to see monthly/yearly review.",
+     "environment": "JAVA, HTML, CSS and JavaScript."
+  },
+  {
+    "id":6,
+     "name":"Gift Card Exchange:",
+     "description":"Customer can exchange their gift card with cash. The customer can swipe their card or Customer representative service (CSR) can enter the gift card info manually into the system. Validation is done by third party API called Blackhawk Network. The API is responsible for providing the worth value of Gift Card to cash.",
+     "environment": "C#, Windows form, SQL, Web API, Visual Studio 2013."
+  },
+  {
+    "id":7,
+     "name":"Bill Payment Aggregator:",
+     "description":"Customer will be able to pay their bill to the different company like, AT&T, ComEd, Comcast and so one. This application is integrated with a few vendor API like Softgate to pay the bills to desire company. This application also able to provide all the previous billing history, resolve any billing issue, reporting and so on.",
+     "environment": "C#, Windows Form, SQL, WCF, Visual Studio 2013."
+  },
+  {
+    "id":8,
+     "name":"User Management:",
+     "description":"Admin can add a user, update username and password, delete a user. The system will be able to lock user for a certain number of the wrong password entered. The system will allow a user to change their password. The system will allow a user to recover the password if forgotten. The system will force the user to change the password if expire and so on.",
+     "environment": "C#, Windows Form, SQL, WCF, Visual Studio 2013."
+  }
+
+]

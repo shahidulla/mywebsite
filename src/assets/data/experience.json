@@ -1,0 +1,127 @@
+[
+  {
+     "Language":"C#",
+     "SkillLevel":4.0,
+     "SkillType":"Back End"
+  },
+  {
+     "Language":"ASP.NET MVC",
+     "SkillLevel":4.5,
+     "SkillType":"Back End"
+  },
+  {
+     "Language":"ASP.NET Web API and WCF",
+     "SkillLevel":4.6,
+     "SkillType":"Back End"
+  },
+  {
+     "Language":"ASP.NET Core MVC",
+     "SkillLevel":4.5,
+     "SkillType":"Back End"
+  },
+  {
+     "Language":"ASP.NET Core Web API",
+     "SkillLevel":4.5,
+     "SkillType":"Back End"
+  },
+  {
+     "Language":"ASP.NET Web Forms",
+     "SkillLevel":4.0,
+     "SkillType":"Back End"
+  },
+  {
+     "Language":"Node.js",
+     "SkillLevel":3.5,
+     "SkillType":"Back End"
+  },
+  {
+     "Language":"HTML and CSS",
+     "SkillLevel":3.5,
+     "SkillType":"Front End"
+  },
+  {
+     "Language":"Angular",
+     "SkillLevel":4.0,
+     "SkillType":"Front End"
+  },
+  {
+     "Language":"Java Script, ES6, Type Script",
+     "SkillLevel":3.9,
+     "SkillType":"Front End"
+  },
+  {
+     "Language":"jQuery",
+     "SkillLevel":4.0,
+     "SkillType":"Front End"
+  },
+  {
+     "Language":"SQL",
+     "SkillLevel":3.0,
+     "SkillType":"Database"
+  },
+  {
+     "Language":"MongoDB",
+     "SkillLevel":3.0,
+     "SkillType":"Database"
+  },
+  {
+     "Language":"Source Controls: TFS and Git",
+     "SkillLevel":4.0,
+     "SkillType":"Tools and Editors"
+  },
+  {
+     "Language":"Editors: Visual Studio Code and Sublime Text",
+     "SkillLevel":4.0,
+     "SkillType":"Tools and Editors"
+  },
+  {
+     "Language":"IDEs: Visual Studio, Web Strom and Eclipse",
+     "SkillLevel":4.0,
+     "SkillType":"Tools and Editors"
+  },
+  {
+     "Language":"Task Scheduler: Gulp and WebPack",
+     "SkillLevel":3.0,
+     "SkillType":"Tools and Editors"
+  },
+  {
+     "Language":"Autoface",
+     "SkillLevel":5.0,
+     "SkillType":"Dependency Injection Framework"
+  },
+  {
+     "Language":"Unity",
+     "SkillLevel":5.0,
+     "SkillType":"Dependency Injection Framework"
+  },
+  {
+     "Language":"Ninject",
+     "SkillLevel":5.0,
+     "SkillType":"Dependency Injection Framework"
+  },
+  {
+     "Language":"Azure and Amazon",
+     "SkillLevel":3.0,
+     "SkillType":"Cloud Technologies"
+  },
+  {
+     "Language":"Entity Framework and Entity Framework core",
+     "SkillLevel":4.5,
+     "SkillType":"Object Relational Mapper"
+  },
+  {
+     "Language":"LINQ",
+     "SkillLevel":4.5,
+     "SkillType":"Object Relational Mapper"
+  },
+  {
+     "Language":"Dapper",
+     "SkillLevel":4.5,
+     "SkillType":"Micor ORMS"
+  },
+  {
+     "Language":"Windows Forms",
+     "SkillLevel":4.0,
+     "SkillType":"Desktop Applications"
+  }
+]

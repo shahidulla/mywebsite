@@ -1,0 +1,285 @@
+﻿
+<block-ui>
+<div class="container">
+
+
+        <div class="col-md-3 col-sm-12 col-xs-12 about">
+            <!--<div class="col-md-3"> <img class="img-rounded" src="../../images/userpic01.jpg" height="150" width="150"/>
+            </div>-->
+       <div class="center-block">  <img src="../assets/images/userpic011.JPG" alt="Generic placeholder image" class="img-rounded img-responsive" height="200" width="200"/> </div>
+                <h3 class="text-center">About Me</h3>
+                <hr>
+            <p class="about-text">
+                I’m Muhammad Shahidulla, a Full Stack Developer based in the suburb of Chicago,
+                Illinois. I did Masters in Electrical and Computer Engineering from Jackson
+                State University, Jackson, Mississippi in 2015. Before that, I did my Bachelors
+                in Electronics and Telecommunication Engineering from Rajshahi University of
+                Engineering and Technology, Rajshahi, Bangladesh.
+            </p>
+            <p class="about-text">
+                I started my career in teaching at a technical institute in Bangladesh in 2010.
+                Later, the pursuit of a graduate degree in Engineering brought me in the U.S. in
+                2013.Currently, I am working as
+                an Application Developer at PLS Financial Services, Inc. in Oakbrook, Illinois.</p>
+            <p class="about-text">
+                    A quick self-learner, I love coding and learning new technologies. When I’m not coding, I’m busy spending time with my family and friends.
+
+                </p>
+
+        </div>
+        <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-1 education-skills">
+
+
+                <h3 class="text-center">Education</h3>
+                <hr>
+            <div class="row">
+                <ul>
+                    <li style="list-style: none;">
+                        <div class="col-md-11 col-md-offset-1">
+                            <div class="col-md-2 education-image">
+
+                                <img src="../assets/images/Jackson_State_University_Logo.png" height="70" width="70" />
+                            </div>
+                              <div class="col-md-8">
+                            <h3>
+                                <i class="fa fa-graduation-cap"></i> MSc Computer Engineering
+                            </h3>
+                            <h4>Jackson State University, USA </h4>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+                        </div>
+                            </div>
+                    </li>
+                    <li style="list-style: none;">
+                        <div class="col-md-11 col-md-offset-1">
+                            <div class="col-md-2 education-image">
+                                <img src="../assets/images/ruet.jpg" height="70" width="70"/>
+
+                            </div>
+                            <div class="col-md-8">
+                            <h3>
+                                <i class="fa fa-graduation-cap"></i> BSc Telecomunication Engineering
+                            </h3>
+                            <h4>Rajshahi University of Engineering and Technology, Bangladesh</h4>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2006 - 2010</h6>
+                        </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+            <h3 class="text-center">Skills</h3>
+            <hr>
+
+
+            <ul>
+              <div> <h3 class="knowledgecategory"><span>Back End:</span></h3></div>
+                  <li *ngFor="let Experience of Experiences" style="list-style: none;">
+
+                    <div *ngIf="Experience.SkillType=='Back End'" >
+
+                      <div class="col-md-6 col-md-offset-1 language">
+                          <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                      </div>
+                      <div class="col-md-4 col-md-offset-1">
+                          <rating [(ngModel)]="Experience.SkillLevel"
+                                  [max]="5"
+                                  [readonly]="true"
+                                  [disabled]="ture"
+                                  [required]="true"
+                                  [float]="true"
+                                  [titles]="['one', 'two', 'three', 'four', 'five']">
+                          </rating>
+                      </div>
+                      </div>
+                  </ul>
+                  <ul>
+                   <div>  <span><br><h3 class="knowledgecategory"><span>Front End:</span></h3></span></div>
+
+                        <li *ngFor="let Experience of Experiences" style="list-style: none;">
+
+                          <div *ngIf="Experience.SkillType=='Front End'">
+                            <div class="col-md-6 col-md-offset-1 language">
+                                <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                            </div>
+                            <div class="col-md-4 col-md-offset-1">
+                                <rating [(ngModel)]="Experience.SkillLevel"
+                                        [max]="5"
+                                        [readonly]="true"
+                                        [disabled]="ture"
+                                        [required]="true"
+                                        [float]="true"
+                                        [titles]="['one', 'two', 'three', 'four', 'five']">
+                                </rating>
+                            </div>
+                            </div>
+                        </li>
+              </ul>
+              <br/>
+              <ul>
+                <span> <br> <h3 class="knowledgecategory"><span>Database:</span></h3></span>
+
+
+                    <li *ngFor="let Experience of Experiences" style="list-style: none;">
+
+                      <div *ngIf="Experience.SkillType=='Database'">
+                        <div class="col-md-6 col-md-offset-1 language">
+                            <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                        </div>
+                        <div class="col-md-4 col-md-offset-1">
+                            <rating [(ngModel)]="Experience.SkillLevel"
+                                    [max]="5"
+                                    [readonly]="true"
+                                    [disabled]="ture"
+                                    [required]="true"
+                                    [float]="true"
+                                    [titles]="['one', 'two', 'three', 'four', 'five']">
+                            </rating>
+                        </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                  <span><br><h3 class="knowledgecategory"><span>Tools and Editors:</span></h3></span>
+                      <li *ngFor="let Experience of Experiences" style="list-style: none;">
+                        <div *ngIf="Experience.SkillType=='Tools and Editors'">
+                          <div class="col-md-6 col-md-offset-1 language">
+                              <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                          </div>
+                          <div class="col-md-4 col-md-offset-1">
+                              <rating [(ngModel)]="Experience.SkillLevel"
+                                      [max]="5"
+                                      [readonly]="true"
+                                      [disabled]="ture"
+                                      [required]="true"
+                                      [float]="true"
+                                      [titles]="['one', 'two', 'three', 'four', 'five']">
+                              </rating>
+                          </div>
+                          </div>
+                      </li>
+                  </ul>
+                  <ul>
+                     <span><br><h3 class="knowledgecategory"><span>Dependency Injection Framework:</span></h3></span>
+
+
+                        <li *ngFor="let Experience of Experiences" style="list-style: none;">
+
+                          <div *ngIf="Experience.SkillType=='Dependency Injection Framework'">
+                            <div class="col-md-6 col-md-offset-1 language">
+                                <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                            </div>
+                            <div class="col-md-4 col-md-offset-1">
+                                <rating [(ngModel)]="Experience.SkillLevel"
+                                        [max]="5"
+                                        [readonly]="true"
+                                        [disabled]="ture"
+                                        [required]="true"
+                                        [float]="true"
+                                        [titles]="['one', 'two', 'three', 'four', 'five']">
+                                </rating>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                       <span><br> <h3 class="knowledgecategory"><span>Cloud Technologies:</span></h3></span>
+
+
+                          <li *ngFor="let Experience of Experiences" style="list-style: none;">
+
+                            <div *ngIf="Experience.SkillType=='Cloud Technologies'">
+                              <div class="col-md-6 col-md-offset-1 language">
+                                  <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                              </div>
+                              <div class="col-md-4 col-md-offset-1">
+                                  <rating [(ngModel)]="Experience.SkillLevel"
+                                          [max]="5"
+                                          [readonly]="true"
+                                          [disabled]="ture"
+                                          [required]="true"
+                                          [float]="true"
+                                          [titles]="['one', 'two', 'three', 'four', 'five']">
+                                  </rating>
+                              </div>
+                              </div>
+                          </li>
+                        </ul>
+                      <ul>
+                          <span><br><h3 class="knowledgecategory"><span>Object Relational Mapper:</span></h3></span>
+
+
+                            <li *ngFor="let Experience of Experiences" style="list-style: none;">
+                              <div *ngIf="Experience.SkillType=='Object Relational Mapper'">
+
+                                <div class="col-md-6 col-md-offset-1 language">
+                                    <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                                </div>
+                                <div class="col-md-4 col-md-offset-1">
+                                    <rating [(ngModel)]="Experience.SkillLevel"
+                                            [max]="5"
+                                            [readonly]="true"
+                                            [disabled]="ture"
+                                            [required]="true"
+                                            [float]="true"
+                                            [titles]="['one', 'two', 'three', 'four', 'five']">
+                                    </rating>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                          <span> <br> <h3 class="knowledgecategory"><span>Micro ORMS:</span></h3></span>
+
+
+                              <li *ngFor="let Experience of Experiences" style="list-style: none;">
+
+                                <div *ngIf="Experience.SkillType=='Micor ORMS'">
+                                  <div class="col-md-6 col-md-offset-1 language">
+                                      <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                                  </div>
+                                  <div class="col-md-4 col-md-offset-1">
+                                      <rating [(ngModel)]="Experience.SkillLevel"
+                                              [max]="5"
+                                              [readonly]="true"
+                                              [disabled]="ture"
+                                              [required]="true"
+                                              [float]="true"
+                                              [titles]="['one', 'two', 'three', 'four', 'five']">
+                                      </rating>
+                                  </div>
+                                  </div>
+                              </li>
+                          </ul>
+                          <ul>
+                             <span><br> <h3 class="knowledgecategory"><span>Desktop Applications:</span></h3></span>
+
+
+                                <li *ngFor="let Experience of Experiences" style="list-style: none;">
+                                  <div *ngIf="Experience.SkillType=='Desktop Applications'">
+
+                                    <div class="col-md-6 col-md-offset-1 language">
+                                        <i class="fa fa-check-square" aria-hidden="true"></i> {{Experience.Language}}
+                                    </div>
+                                    <div class="col-md-4 col-md-offset-1">
+                                        <rating [(ngModel)]="Experience.SkillLevel"
+                                                [max]="5"
+                                                [readonly]="true"
+                                                [disabled]="ture"
+                                                [required]="true"
+                                                [float]="true"
+                                                [titles]="['one', 'two', 'three', 'four', 'five']">
+                                        </rating>
+                                    </div>
+                                  </div>
+                                </li>
+                            </ul>
+        </div>
+
+       </div>
+       <div class="footer-div">
+        <footer-component>
+
+        </footer-component>
+        </div>
+      </block-ui>
