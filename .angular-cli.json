@@ -1,0 +1,94 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "my-personal-website"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css", "../node_modules/prismjs/themes/prism-coy.css"
+      ],
+      "scripts": ["../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/prismjs/prism.js",
+        "../node_modules/prismjs/components/prism-typescript.js",
+        "../node_modules/prismjs/components/prism-go.js",
+        "../node_modules/prismjs/components/prism-markup.min.js",
+        "../node_modules/prismjs/components/prism-css.min.js",
+        "../node_modules/prismjs/components/prism-scss.min.js",
+        "../node_modules/prismjs/components/prism-sass.min.js",
+        "../node_modules/prismjs/components/prism-less.min.js",
+        "../node_modules/prismjs/components/prism-typescript.min.js",
+        "../node_modules/prismjs/components/prism-php.min.js",
+        "../node_modules/prismjs/components/prism-go.min.js",
+        "../node_modules/prismjs/components/prism-python.min.js",
+        "../node_modules/prismjs/components/prism-ruby.min.js",
+        "../node_modules/prismjs/components/prism-rust.min.js",
+        "../node_modules/prismjs/components/prism-c.min.js",
+        "../node_modules/prismjs/components/prism-java.min.js",
+        "../node_modules/prismjs/components/prism-lua.min.js",
+        "../node_modules/prismjs/components/prism-dart.min.js",
+        "../node_modules/prismjs/components/prism-swift.min.js",
+        "../node_modules/prismjs/components/prism-scala.min.js",
+        "../node_modules/prismjs/components/prism-sql.min.js",
+        "../node_modules/prismjs/components/prism-json.min.js",
+        "../node_modules/prismjs/components/prism-r.min.js",
+        "../node_modules/prismjs/components/prism-sas.min.js",
+        "../node_modules/prismjs/components/prism-matlab.min.js",
+        "../node_modules/prismjs/components/prism-bash.min.js",
+        "../node_modules/prismjs/components/prism-yaml.min.js",
+        "../node_modules/prismjs/components/prism-nginx.min.js",
+        "../node_modules/prismjs/components/prism-docker.min.js",
+        "../node_modules/prismjs/components/prism-vim.min.js",
+        "../node_modules/prismjs/components/prism-csharp.min.js",
+        "../node_modules/prismjs/components/prism-aspnet.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

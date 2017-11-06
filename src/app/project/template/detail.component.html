@@ -1,0 +1,14 @@
+
+
+<div class="container" *ngIf="project">
+
+    <h2 style="text-align: center;">{{project.name}}</h2>
+    <hr>
+
+    <div style="text-align: justify" innerHTML="{{project.info}}"></div>
+        <a (click)="backToList(); onDeactivate()" class="btn btn-primary pull-right">Back to list</a>
+        <br/>
+</div> 
+<div class="footer-div">
+    <footer-component></footer-component>
+</div>

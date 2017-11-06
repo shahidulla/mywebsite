@@ -1,0 +1,33 @@
+﻿  <!-- Page Content -->
+
+
+<!-- Blog Entries Column -->
+<block-ui>
+    <div class="col-md-8 col-md-offset-1 postList">
+        <div *ngIf="Posts">
+            <!-- First Blog Post -->
+            <div *ngFor="let Post of Posts | paginate: { itemsPerPage: 3, currentPage: p }">
+                <div class="wow">
+                    <h2>
+                        <a [routerLink]="['details',Post.Id]">{{Post.Title}}</a>
+                    </h2>
+
+                    <p class="lead">
+                        <!--by <a [routerLink]="['about']">Md Shahidulla</a>-->
+                        <a (click)="aboutMe()">Md Shahidulla</a>
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-time"></span>{{Post.PostedOn}}
+                    </p>
+                </div>
+                <div style="text-align: justify" innerHTML="{{Post.ShortDescription}}"></div>
+                <a [routerLink]="['details',Post.Id]" class="btn btn-primary pull-right">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <br>
+                <hr>
+            </div>
+        </div>
+        <div *ngIf="Posts" class="pagination">
+            <pagination-controls (pageChange)="p = $event" (click)="goToTop()"></pagination-controls>
+            </div>
+        </div>
+</block-ui>

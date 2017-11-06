@@ -1,0 +1,16 @@
+﻿.posttitel {
+    display: inline;
+}
+
+
+.well {
+    background-color:white;
+}
+ a { cursor: pointer; cursor: hand; }
+
+ .container {
+     width: 90%;
+ }
+ .sidebar {
+     /*margin-right: 20px;*/
+ }

@@ -1,0 +1,80 @@
+
+      .litle-info {
+          text-align: left;
+      }
+      .container-fluid{
+          height: 100%;
+          width: 100%;
+          margin-bottom: 0px;
+          /*background-color:lightgray;*/
+      }
+
+img {
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+    -webkit-box-shadow: 0px 0px 5px #888888;
+    -ms-box-shadow: 0px 0px 5px #888888;
+    box-shadow: 0px 0px 5px #888888;
+}
+
+      .about-text {
+    text-align:justify;
+}
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+  .li {
+      display: inline;
+      list-style:none;
+
+  }
+
+  .well {
+      /*background-color: white;*/
+    /*background-color:lavender;*/
+    /*border: 1px solid cornflowerblue;*/
+}
+ .star-icon:before {
+     color: green !important;
+    content: attr(data-icon) " ";
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+}
+.about {
+    border: 3px solid white;
+}
+
+      .education-skills {
+     background-color: white;
+ }
+.language {
+    background-color: gold;
+    margin-top: 12px;
+}
+.about-text{
+    font-size:medium;
+}
+.w3-text-teal {
+    color: #009688!important;
+}
+
+.education-image>img {
+          margin-top: 22px;
+          display: inline;
+      }
+      ul {
+        margin:-20px, 0px;
+      }
+.knowledgecategory span{
+  background:linen;
+   font-size:20px;
+
+}

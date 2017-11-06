@@ -1,0 +1,70 @@
+﻿
+
+<div class="sidebar">
+    <div class="row">
+
+        <router-outlet (deactivate)="goToTop()"></router-outlet>
+        <div *ngIf="Posts" class="col-md-2">
+            <!-- Blog Search Well -->
+            <div class="well">
+                <h4>Blog Search</h4>
+                <div class="input-group">
+                    <input type="text" class="form-control"/>
+
+
+                    <span class="input-group-addon">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+
+                </div>
+                <!-- /.input-group -->
+            </div>
+            <!-- Blog Categories Well -->
+            <div class="well">
+                <h4>Categories</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled">
+                            <li *ngFor="let Category of Categories">
+                                <a (click)="postDetailsByCategoryId(Category)">{{Category.Name}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+
+            <div class="well">
+                <h4>Popular Tags</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                   <a *ngFor="let Tag of Tags" (click)="postDetailsByTagId(Tag)"> {{Tag.Name}}</a>
+
+                </div>
+              </div>
+                <!-- /.row -->
+            </div>
+            <div class="well">
+                <h4>Latest Post</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled">
+                            <li style="width: 175px;" *ngFor="let Post of Posts">
+                                <a (click)="postDetails(Post)">{{Post.Title}}</a>
+                                <br/><br/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<div *ngIf="Posts" class="footer-div">
+<footer-component></footer-component>
+    </div>
+<!-- /.container -->

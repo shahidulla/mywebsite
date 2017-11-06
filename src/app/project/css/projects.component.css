@@ -1,0 +1,36 @@
+.spacer {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.btn-app{
+    /*border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;*/
+    border: 2px solid lightcyan;
+    background-color: lavender;
+}
+
+.projects {
+     /*border: 1px solid cornflowerblue;*/
+}
+
+img {
+    margin-top: 5px;
+}
+.text-center {
+     /*border: 1px solid cornflowerblue;*/
+    /*background-color:lightsteelblue;*/
+    border-bottom: 2px groove lightcyan;
+    height: 70px;
+    margin-top: 5px;
+
+}
+#insidecontainer{
+  background-color: white;
+  margin-top: 80px;
+}
+
+h1 {
+
+}

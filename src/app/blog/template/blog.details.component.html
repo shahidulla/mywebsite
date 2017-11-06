@@ -1,0 +1,57 @@
+﻿
+ <block-ui>
+     <div class="col-md-8 col-md-offset-1 postdetail" style="position: relative">
+         <div *ngIf="PostDetail">
+
+             <div class="wow">
+               <div class="row">
+                 <div class="col-md-6">
+                 <h2>
+                     {{PostDetail.Title}}
+                 </h2>
+
+                 <p class="lead">
+                    by <a>Md Shahidulla</a>
+                 </p>
+                 <p>
+                     <span class="glyphicon glyphicon-time"></span>{{PostDetail.PostedOn}}
+                 </p>
+                </div>
+
+                <div class="clo-md-4" style="margin-top:25px;">
+                  <h3>
+                    Tags
+                    </h3>
+                    <a *ngFor="let Tag of Tags"> {{Tag.Name}}</a>
+                  </div>
+             </div>
+            </div>
+            <div style="text-align: justify; margin-top: 25px;" [innerHTML]="PostDetail.Description">
+             <a [routerLink]="['/blog']" class="btn btn-primary pull-right">Back to list</a>
+             <br/>
+             <hr>
+             <ul class="comment-list">
+
+                 <li>
+                     <img src="../../assets/images/userpic011.JPG" class="img-responsive" alt="">
+                     <h4 class="post-author_head">About the Author:</h4>
+                     <h4 style="text-decoration: none">
+                         <a (click)="aboutMe()">Muhammad Shahidulla</a> is a Full Stack Developer based in the suburb of Chicago, Illinois.
+                     </h4>
+                     <hr>
+                     <div class="text-center center-block">
+                         <span>Join him on |</span>
+                         <a href="https://www.facebook.com/shahidullah.shahid.7"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                         <a href="https://twitter.com/RueteteShahid"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                         <a href="https://plus.google.com/117857584370425892579"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                         <a href="https://plus.google.com/117857584370425892579"><i id="social-in" class="fa fa-linkedin-square fa-3x social"></i></a>
+                     </div>
+                     <div class="clearfix"></div>
+                 </li>
+             </ul>
+         </div>
+         <hr>
+         <disqus-thread [page-identifier]="pageIdentifier" [page-url]="pageUrl"></disqus-thread>
+     </div>
+     </div>
+ </block-ui>
